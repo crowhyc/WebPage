@@ -1,0 +1,9 @@
+common:
+  swagger:
+    enabled: true
+    api-info:
+      title: Javanewb-ZKK
+      version: 1.0.0
+      description: Javanewb-ZKK项目
+    path-regex: /.*
+    basePackage: com.javanewb.zkk

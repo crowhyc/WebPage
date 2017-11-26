@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    ></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        window.setInterval(function () {
+            const colors = ['red', 'drakblue', 'brown', 'purple', 'green', 'yellow', 'black', 'maroon', 'navy', 'lime', 'teal', 'fuchsia', 'aqua'];
+            const idx = Math.round(Math.random() * colors.length);
+            $("#title").css("color", colors[idx]);
+        }, 150);
+
+
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default" style=" border-bottom: 0px ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Javanewb.com</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://x.javanewb.com/nexus" hegiht="20px">Nexus Home<span
+                        class="sr-only">(current)</span></a></li>
+                <li><a href="http://github.com/crowhyc">Github Home</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div>
+    <div class="jumbotron center-block "
+         style="width: 800px;margin-top: 150px;border-radius:25px; box-shadow: 10px 10px 5px #888888;background-color: #6666"
+         id="main">
+        <div><p class="text-center" id="title" style="font-size: 60px;font-weight: bold; color: cadetblue">ZKKeeper</p>
+        </div>
+        <div class="container-fluid" id="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-3"></div>
+                <div class="col-xs-6 col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Username</div>
+                                <input type="text" class="form-control" id="username"
+                                       placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Password&nbsp;</div>
+                                <input type="password" class="form-control" id="pwd"
+                                       placeholder="Password">
+                            </div>
+                        </div>
+                        <!--<div class="form-group">-->
+                        <!--<label for="exampleInputFile">File input</label>-->
+                        <!--<input type="file" id="exampleInputFile">-->
+                        <!--<p class="help-block">Example block-level help text here.</p>-->
+                        <!--</div>-->
+                        <!--<div class="checkbox">-->
+                        <!--<label>-->
+                        <!--<input type="checkbox"> Check me out-->
+                        <!--</label>-->
+                        <!--</div>-->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-default "
+                                    style="padding-left: 50px;padding-right: 50px" id="loginSub">Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-6 col-md-3"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <nav class="narbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid" style="text-align: center">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <p class="navbar-text" style="font-size: 20px">云逸的小站</p>
+            </div>
+        </div>
+    </nav>
+
+</div>
+</body>
+</html>
